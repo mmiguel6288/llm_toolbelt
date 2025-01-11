@@ -1,6 +1,6 @@
-# LLM Toolbelt
+# omnitoolbelt
 
-A Python library for exposing functions as tools to Large Language Models (LLMs).
+A Python library for exposing groups of functions as tools to consumers such as Large Language Models (LLMs) or Discord users.
 
 [![Actions Status][actions-badge]][actions-link]
 [![Documentation Status][rtd-badge]][rtd-link]
@@ -10,10 +10,10 @@ A Python library for exposing functions as tools to Large Language Models (LLMs)
 <!-- SPHINX-START -->
 
 <!-- prettier-ignore-start -->
-[actions-badge]:            https://github.com/mmiguel6288/llm_toolbelt/workflows/CI/badge.svg
-[actions-link]:             https://github.com/mmiguel6288/llm_toolbelt/actions
+[actions-badge]:            https://github.com/mmiguel6288/omnitoolbelt/workflows/CI/badge.svg
+[actions-link]:             https://github.com/mmiguel6288/omnitoolbelt/actions
 [github-discussions-badge]: https://img.shields.io/static/v1?label=Discussions&message=Ask&color=blue&logo=github
-[github-discussions-link]:  https://github.com/mmiguel6288/llm_toolbelt/discussions
+[github-discussions-link]:  https://github.com/mmiguel6288/omnitoolbelt/discussions
 <!-- prettier-ignore-end -->
 
 ## Features
@@ -37,7 +37,7 @@ pip install llm-toolbelt
 Here's a simple example of registering and using tools:
 
 ```python
-from llm_toolbelt import Toolbelt
+from omnitoolbelt import Toolbelt
 
 # Register some tools
 @Toolbelt.tool(group="math")

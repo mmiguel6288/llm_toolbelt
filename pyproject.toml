@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 
 [project]
-name = "llm_toolbelt"
+name = "omnitoolbelt"
 authors = [
   { name = "Matt Miguel", email = "mmiguel6288@gmail.com" },
 ]
@@ -51,15 +51,15 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/mmiguel6288/llm_toolbelt"
-"Bug Tracker" = "https://github.com/mmiguel6288/llm_toolbelt/issues"
-Discussions = "https://github.com/mmiguel6288/llm_toolbelt/discussions"
-Changelog = "https://github.com/mmiguel6288/llm_toolbelt/releases"
+Homepage = "https://github.com/mmiguel6288/omnitoolbelt"
+"Bug Tracker" = "https://github.com/mmiguel6288/omnitoolbelt/issues"
+Discussions = "https://github.com/mmiguel6288/omnitoolbelt/discussions"
+Changelog = "https://github.com/mmiguel6288/omnitoolbelt/releases"
 
 
 [tool.hatch]
 version.source = "vcs"
-build.hooks.vcs.version-file = "src/llm_toolbelt/_version.py"
+build.hooks.vcs.version-file = "src/omnitoolbelt/_version.py"
 
 [tool.hatch.envs.default]
 features = ["test"]
@@ -68,7 +68,7 @@ scripts.test = "pytest {args}"
 
 [tool.uv]
 dev-dependencies = [
-  "llm_toolbelt[test]",
+  "omnitoolbelt[test]",
 ]
 
 
@@ -88,7 +88,7 @@ pythonpath = [
 ]
 
 [tool.coverage]
-run.source = ["llm_toolbelt"]
+run.source = ["omnitoolbelt"]
 report.exclude_also = [
   '\.\.\.',
   'if typing.TYPE_CHECKING:',
@@ -105,7 +105,7 @@ disallow_untyped_defs = false
 disallow_incomplete_defs = false
 
 [[tool.mypy.overrides]]
-module = "llm_toolbelt.*"
+module = "omnitoolbelt.*"
 disallow_untyped_defs = true
 disallow_incomplete_defs = true
 
@@ -143,7 +143,7 @@ ignore = [
 ]
 isort.required-imports = ["from __future__ import annotations"]
 # Uncomment if using a _compat.typing backport
-# typing-modules = ["llm_toolbelt._compat.typing"]
+# typing-modules = ["omnitoolbelt._compat.typing"]
 
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = ["T20"]
